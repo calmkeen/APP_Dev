@@ -58,6 +58,7 @@ struct FruitDetailView: View {
             }//:Scroll
             .edgesIgnoringSafeArea(.top)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
