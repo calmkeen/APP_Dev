@@ -13,6 +13,8 @@
 		756B86992AC9483E000AE1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756B86972AC9483E000AE1BC /* Main.storyboard */; };
 		756B869B2AC9483F000AE1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756B869A2AC9483F000AE1BC /* Assets.xcassets */; };
 		756B869E2AC9483F000AE1BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756B869C2AC9483F000AE1BC /* LaunchScreen.storyboard */; };
+		756B86A62AC94D1A000AE1BC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B86A52AC94D1A000AE1BC /* TableViewController.swift */; };
+		756B86A82AC94D35000AE1BC /* AddTodoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B86A72AC94D35000AE1BC /* AddTodoListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		756B869A2AC9483F000AE1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		756B869D2AC9483F000AE1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		756B869F2AC9483F000AE1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		756B86A52AC94D1A000AE1BC /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		756B86A72AC94D35000AE1BC /* AddTodoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				756B869A2AC9483F000AE1BC /* Assets.xcassets */,
 				756B869C2AC9483F000AE1BC /* LaunchScreen.storyboard */,
 				756B869F2AC9483F000AE1BC /* Info.plist */,
+				756B86A52AC94D1A000AE1BC /* TableViewController.swift */,
+				756B86A72AC94D35000AE1BC /* AddTodoListController.swift */,
 			);
 			path = TodoList_storyboard;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756B86A82AC94D35000AE1BC /* AddTodoListController.swift in Sources */,
 				756B86962AC9483E000AE1BC /* ViewController.swift in Sources */,
+				756B86A62AC94D1A000AE1BC /* TableViewController.swift in Sources */,
 				756B86922AC9483E000AE1BC /* AppDelegate.swift in Sources */,
 				756B86942AC9483E000AE1BC /* SceneDelegate.swift in Sources */,
 			);
