@@ -16,8 +16,15 @@ class ListTodoTablbeViewController : UITableViewController{
         super.viewDidLoad()
     }
     
-    
-    
+    private func registerXib() {
+
+        let nibName = UINib(nibName: "TodoTableViewCell", bundle: nil)
+
+        tableView.register(nibName, forCellReuseIdentifier: "TodoTableCell")
+
+    }
+
+
     
 }
 
@@ -34,9 +41,6 @@ extension ListTodoTablbeViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellName", for: indexPath)
-        
-        cell.textLabel?.text = arr[indexPath.row]
-        
         return cell
     }
 }
