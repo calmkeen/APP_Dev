@@ -7,20 +7,20 @@
 
 import UIKit
 
-class ListTodoTablbeViewController : UITableViewController{
+class ListTodoTablbeViewController : UIViewController, UITableViewDataSource{
+
      
-    var todolistView : UITableView
-    var todoCell: UITableViewCell
+    @IBOutlet var todolistTableView : UITableView!
+    var todoCell: UITableViewCell!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        todolistTableView.dataSource = self
     }
-    
     private func registerXib() {
-
         let nibName = UINib(nibName: "TodoTableViewCell", bundle: nil)
-
-        tableView.register(nibName, forCellReuseIdentifier: "TodoTableCell")
+        todolistTableView.register(nibName, forCellReuseIdentifier: "TodoTableCell")
 
     }
 
@@ -30,17 +30,17 @@ class ListTodoTablbeViewController : UITableViewController{
 
 extension ListTodoTablbeViewController {
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 0
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-         
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellName", for: indexPath)
-        return cell
-    }
+    
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "CellName", for: indexPath)
+//        return cell
+//    }
 }
