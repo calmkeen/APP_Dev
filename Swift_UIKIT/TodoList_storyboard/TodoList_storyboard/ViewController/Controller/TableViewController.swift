@@ -15,17 +15,16 @@ class ListTodoTablbeViewController : UIViewController, UITableViewDataSource{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         todolistTableView.dataSource = self
+        
+        registerXib()
     }
+    
     private func registerXib() {
         let nibName = UINib(nibName: "TodoTableViewCell", bundle: nil)
         todolistTableView.register(nibName, forCellReuseIdentifier: "TodoTableCell")
 
     }
-
-
-    
 }
 
 extension ListTodoTablbeViewController {
