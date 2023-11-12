@@ -10,9 +10,18 @@ import UIKit
 class AddTodoListController: UIViewController {
     
     @IBOutlet var todoListTitle: UITextField!
+    @IBOutlet var todoListDate: UIButton!
+    @IBOutlet var todoListRepeat: UIButton!
     @IBOutlet var context: UITextView!
     @IBOutlet var backBtn: UIButton!
     @IBOutlet var completeBtn: UIButton!
+    
+    @IBAction func backBtnEvnet(_ sender: Any) {
+        
+    }
+    @IBAction func completeBtnEvent(_ sender: Any) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
