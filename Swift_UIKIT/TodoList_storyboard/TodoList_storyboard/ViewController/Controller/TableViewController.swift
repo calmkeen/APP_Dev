@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListTodoTablbeViewController : UIViewController {
+class ListTodoTableViewController : UIViewController {
     
     let testTitle: [String] = ["testTitle","testTitle1","testTitle2","testTitle3"]
     let testSubTitle: [String] = ["testSubTitle","testSubTitle1","testSubTitle2","testSubTitle3"]
@@ -26,10 +26,16 @@ class ListTodoTablbeViewController : UIViewController {
         let nibName = UINib(nibName: "TodoTableViewCell", bundle: nil)
         todolistTableView.register(nibName, forCellReuseIdentifier: "TodoTableCell")
     }
-
+    @IBAction func AddBtnEvent(_ sender: Any) {
+        let addBtnEvent = self.storyboard?.instantiateViewController(withIdentifier: "CreateView")
+        addBtnEvent?.modalTransitionStyle = .coverVertical
+        addBtnEvent?.modalPresentationStyle = .fullScreen
+        self.present(addBtnEvent!, animated: true, completion: nil)
+    }
+    
 }
 
-extension ListTodoTablbeViewController: UITableViewDelegate,UITableViewDataSource {
+extension ListTodoTableViewController: UITableViewDelegate,UITableViewDataSource {
     
     // TableView item 개수
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

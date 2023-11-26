@@ -10,6 +10,10 @@ import UIKit
 class AddTodoListController: UIViewController {
     
     @IBOutlet var todoListTitle: UITextField!
+    @IBOutlet var lastDateBtn: UIButton!
+    @IBOutlet var repeatDateBtn: UIButton!
+    @IBOutlet var lastDateSetting: UIView!
+    @IBOutlet var repeatDateSetting: UIButton!
     @IBOutlet var context: UITextView!
     @IBOutlet var backBtn: UIButton!
     @IBOutlet var completeBtn: UIButton!
@@ -27,8 +31,11 @@ class AddTodoListController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func backBtnEvent() {
-        
+    @IBAction func backBtnEvent(_ sender: Any) {
+        let backBtnView = self.storyboard?.instantiateViewController(withIdentifier: "HomeView")
+        backBtnView?.modalTransitionStyle = .coverVertical
+        backBtnView?.modalPresentationStyle = .automatic
+        self.present(backBtnView!, animated: true, completion:  nil)
     }
     func completeBtnEvent() {
         
