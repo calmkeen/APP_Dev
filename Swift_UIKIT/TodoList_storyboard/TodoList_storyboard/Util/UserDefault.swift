@@ -20,6 +20,7 @@ class UserDefault {
             ]
             addTodoListModel(lastDateCheck: <#T##Bool#>, repeatDataCheck: <#T##Bool#>, todoListContext: <#T##String#>)
         }
+<<<<<<< HEAD
         let userDefaults = UserDefaults.standard
         userDefaults.set(data, forKey: "todolistKey")
         userDefaults.synchronize()
@@ -29,5 +30,7 @@ class UserDefault {
         let userDeffaults = UserDefault.standard
         guard let data = userDefaults.object(forKey: "todolistKey") as ? [String: AnyObject] else {return}
         print(data.description)
+=======
+
     }
 }
