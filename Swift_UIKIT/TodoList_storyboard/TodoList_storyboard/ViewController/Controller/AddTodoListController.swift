@@ -9,6 +9,9 @@ import UIKit
 
 class AddTodoListController: UIViewController {
     
+
+    private var  addViewModel: addTdoListViewModel!
+    
     @IBOutlet var todoListTitle: UITextField!
     @IBOutlet var lastDateBtn: UIButton!
     @IBOutlet var repeatDateBtn: UIButton!
@@ -38,6 +41,16 @@ class AddTodoListController: UIViewController {
         self.present(backBtnView!, animated: true, completion:  nil)
     }
     func completeBtnEvent() {
-        
+        self.addViewModel.saveAddTodoListData()
+    }
+}
+
+extension AddTodoListController: addTodoListDelegate {
+    
+    func AddSaveUserData() {
+        self.showAlertMessag(title: "저장 완료", message: "계획을 시작해 볼까요?")
+    }
+    func addFailUserData() {
+        self.showAlertMessag(title: "저장 실패", message: "다시한번  작성해보실래요?")
     }
 }
