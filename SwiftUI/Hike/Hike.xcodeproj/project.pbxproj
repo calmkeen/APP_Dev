@@ -9,22 +9,24 @@
 /* Begin PBXBuildFile section */
 		756B86FE2B2758E6000AE1BC /* HikeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B86FD2B2758E6000AE1BC /* HikeApp.swift */; };
 		756B87002B2758E6000AE1BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B86FF2B2758E6000AE1BC /* ContentView.swift */; };
-		756B87022B2758E8000AE1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756B87012B2758E8000AE1BC /* Assets.xcassets */; };
+		756B87022B2758E8000AE1BC /* Assets1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756B87012B2758E8000AE1BC /* Assets1.xcassets */; };
 		756B87052B2758E8000AE1BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 756B87042B2758E8000AE1BC /* Preview Assets.xcassets */; };
 		756B870C2B275A77000AE1BC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B870B2B275A77000AE1BC /* CardView.swift */; };
 		756B870E2B275B0D000AE1BC /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B870D2B275B0D000AE1BC /* CustomBackgroundView.swift */; };
 		756B87112B275C5E000AE1BC /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756B87102B275C5E000AE1BC /* ColorExtension.swift */; };
+		759845E52B41528E00059492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 759845E42B41528E00059492 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		756B86FA2B2758E6000AE1BC /* Hike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		756B86FD2B2758E6000AE1BC /* HikeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeApp.swift; sourceTree = "<group>"; };
 		756B86FF2B2758E6000AE1BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		756B87012B2758E8000AE1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		756B87012B2758E8000AE1BC /* Assets1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets1.xcassets; sourceTree = "<group>"; };
 		756B87042B2758E8000AE1BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		756B870B2B275A77000AE1BC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		756B870D2B275B0D000AE1BC /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
 		756B87102B275C5E000AE1BC /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		759845E42B41528E00059492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 				756B870F2B275C4F000AE1BC /* Utility */,
 				756B86FD2B2758E6000AE1BC /* HikeApp.swift */,
 				756B86FF2B2758E6000AE1BC /* ContentView.swift */,
-				756B87012B2758E8000AE1BC /* Assets.xcassets */,
+				756B87012B2758E8000AE1BC /* Assets1.xcassets */,
+				759845E42B41528E00059492 /* Assets.xcassets */,
 				756B87032B2758E8000AE1BC /* Preview Content */,
 				756B870B2B275A77000AE1BC /* CardView.swift */,
 				756B870D2B275B0D000AE1BC /* CustomBackgroundView.swift */,
@@ -143,7 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				756B87052B2758E8000AE1BC /* Preview Assets.xcassets in Resources */,
-				756B87022B2758E8000AE1BC /* Assets.xcassets in Resources */,
+				759845E52B41528E00059492 /* Assets.xcassets in Resources */,
+				756B87022B2758E8000AE1BC /* Assets1.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
